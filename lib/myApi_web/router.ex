@@ -5,8 +5,9 @@ defmodule MyApiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", MyApiWeb do
+  scope "/api/v1", MyApiWeb do
     pipe_through :api
+    resources "/users", UserController
   end
 
   # Enables LiveDashboard only for development
