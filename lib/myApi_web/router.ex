@@ -7,7 +7,7 @@ defmodule MyApiWeb.Router do
 
   scope "/api/v1", MyApiWeb do
     pipe_through :api
-    resources "/users", UserController
+    post "/sign_up", UserController, :create
   end
 
   # Enables LiveDashboard only for development
