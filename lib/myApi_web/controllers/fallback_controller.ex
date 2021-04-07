@@ -27,5 +27,4 @@ defmodule MyApiWeb.FallbackController do
     |> put_status(:unauthorized)
     |> json(%{error: "Login error"})
   end
-
 end

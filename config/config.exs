@@ -10,9 +10,9 @@ use Mix.Config
 config :myApi,
   ecto_repos: [MyApi.Repo]
 
-  config :myApi, MyApi.Guardian,
-    issuer: "myApi",
-    secret_key: "MUeJSxcpFadYCD5thIA7B9DTGy1u0vIU9bsZM86yaLH/Fbn0fndxlCmqdE+BFnKS"
+config :myApi, MyApi.Guardian,
+  issuer: "myApi",
+  secret_key: "MUeJSxcpFadYCD5thIA7B9DTGy1u0vIU9bsZM86yaLH/Fbn0fndxlCmqdE+BFnKS"
 
 # Configures the endpoint
 config :myApi, MyApiWeb.Endpoint,
